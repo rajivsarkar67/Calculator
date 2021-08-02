@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, red,orange,yellow,rgb(12, 182, 12),rgb(71, 71, 226),rgb(108, 75, 131),hotpink);
+    background-repeat: no-repeat;
+}
+
+.buttons-container{
+    display: flex;
+    width: 30%;
+    /* background-color: rgb(82, 73, 61); */
+    /* background-image: linear-gradient(to bottom right, red,orange,yellow,rgb(12, 182, 12),rgb(38, 38, 212),rgb(108, 75, 131),hotpink); */
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 3px 3px black;
+}
+
+.button{
+    flex-basis: 24%;
+    background-color: transparent;
+    /* background-color: rgb(223, 221, 221); */
+    /* border: 2px solid rgb(37, 2, 2); */
+    border: 2px solid grey;
+    border-radius: 1rem;
+    padding: 2rem 0rem;
+    margin: 0.5rem 0.1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    height: 5rem;
+    cursor: pointer;
+    /* box-shadow: 2px 2px rgb(37, 2, 2); */
+    box-shadow: 2px 2px grey;
+    text-shadow: 0.5px 0.5px black;
+    opacity: 100%;
+}
+
+.display{
+    display: inline-block;
+    width: 90%;
+    height: 4rem;
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 3px 3px grey;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    /* body{
+        background-color: red;
+    } */
+    .buttons-container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /* body{
+        background-color: blue;
+    } */
+    .buttons-container{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    /* body{
+        background-color: orangered;
+    } */
+    .buttons-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* body{
+        background-color: black;
+    } */
+    .buttons-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .button{
+        flex-basis: 20%;
+    }
+}
